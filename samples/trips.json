@@ -1,0 +1,920 @@
+[
+  {
+    "id": "访000",
+    "window": [
+      540,
+      690
+    ],
+    "chain": [
+      "吃饭",
+      "托管"
+    ],
+    "ordered": true,
+    "protected": true,
+    "fixed": true,
+    "observed": false,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访001",
+    "window": [
+      558,
+      709
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": "访000"
+  },
+  {
+    "id": "访002",
+    "window": [
+      576,
+      728
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访003",
+    "window": [
+      594,
+      747
+    ],
+    "chain": [
+      "讲座",
+      "吃饭"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访004",
+    "window": [
+      612,
+      766
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访005",
+    "window": [
+      630,
+      785
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访006",
+    "window": [
+      648,
+      690
+    ],
+    "chain": [
+      "还书",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访007",
+    "window": [
+      540,
+      709
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访008",
+    "window": [
+      558,
+      728
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访009",
+    "window": [
+      576,
+      747
+    ],
+    "chain": [
+      "代办",
+      "还书"
+    ],
+    "ordered": false,
+    "protected": true,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访010",
+    "window": [
+      594,
+      766
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": true,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访011",
+    "window": [
+      612,
+      785
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访012",
+    "window": [
+      630,
+      690
+    ],
+    "chain": [
+      "托管",
+      "代办"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": "访011"
+  },
+  {
+    "id": "访013",
+    "window": [
+      648,
+      709
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访014",
+    "window": [
+      540,
+      728
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访015",
+    "window": [
+      558,
+      747
+    ],
+    "chain": [
+      "吃饭",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": false,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访016",
+    "window": [
+      576,
+      766
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访017",
+    "window": [
+      594,
+      785
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访018",
+    "window": [
+      612,
+      690
+    ],
+    "chain": [
+      "讲座",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": true,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访019",
+    "window": [
+      630,
+      709
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访020",
+    "window": [
+      648,
+      728
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": true,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访021",
+    "window": [
+      540,
+      747
+    ],
+    "chain": [
+      "还书",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访022",
+    "window": [
+      558,
+      766
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访023",
+    "window": [
+      576,
+      785
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": "访022"
+  },
+  {
+    "id": "访024",
+    "window": [
+      594,
+      690
+    ],
+    "chain": [
+      "代办",
+      "还书"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访025",
+    "window": [
+      612,
+      709
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访026",
+    "window": [
+      630,
+      728
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访027",
+    "window": [
+      648,
+      747
+    ],
+    "chain": [
+      "托管",
+      "代办"
+    ],
+    "ordered": false,
+    "protected": true,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访028",
+    "window": [
+      540,
+      766
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访029",
+    "window": [
+      558,
+      785
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访030",
+    "window": [
+      576,
+      690
+    ],
+    "chain": [
+      "吃饭",
+      "托管"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": true,
+    "observed": false,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访031",
+    "window": [
+      594,
+      709
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访032",
+    "window": [
+      612,
+      728
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访033",
+    "window": [
+      630,
+      747
+    ],
+    "chain": [
+      "讲座",
+      "吃饭"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访034",
+    "window": [
+      648,
+      766
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": "访033"
+  },
+  {
+    "id": "访035",
+    "window": [
+      540,
+      785
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访036",
+    "window": [
+      558,
+      690
+    ],
+    "chain": [
+      "还书",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": true,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访037",
+    "window": [
+      576,
+      709
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访038",
+    "window": [
+      594,
+      728
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访039",
+    "window": [
+      612,
+      747
+    ],
+    "chain": [
+      "代办",
+      "还书"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访040",
+    "window": [
+      630,
+      766
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": true,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访041",
+    "window": [
+      648,
+      785
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访042",
+    "window": [
+      540,
+      690
+    ],
+    "chain": [
+      "托管",
+      "代办"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访043",
+    "window": [
+      558,
+      709
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访044",
+    "window": [
+      576,
+      728
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访045",
+    "window": [
+      594,
+      747
+    ],
+    "chain": [
+      "吃饭",
+      "托管"
+    ],
+    "ordered": false,
+    "protected": true,
+    "fixed": false,
+    "observed": false,
+    "group": "已登记",
+    "possible_same_as": "访044"
+  },
+  {
+    "id": "访046",
+    "window": [
+      612,
+      766
+    ],
+    "chain": [
+      "还书",
+      "托管"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访047",
+    "window": [
+      630,
+      785
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访048",
+    "window": [
+      648,
+      690
+    ],
+    "chain": [
+      "讲座",
+      "吃饭"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访049",
+    "window": [
+      540,
+      709
+    ],
+    "chain": [
+      "代办",
+      "吃饭"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访050",
+    "window": [
+      558,
+      728
+    ],
+    "chain": [
+      "吃饭",
+      "还书"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": true,
+    "observed": false,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访051",
+    "window": [
+      576,
+      747
+    ],
+    "chain": [
+      "还书",
+      "讲座"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "已登记",
+    "possible_same_as": null
+  },
+  {
+    "id": "访052",
+    "window": [
+      594,
+      766
+    ],
+    "chain": [
+      "托管",
+      "讲座"
+    ],
+    "ordered": true,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  },
+  {
+    "id": "访053",
+    "window": [
+      612,
+      785
+    ],
+    "chain": [
+      "讲座",
+      "代办"
+    ],
+    "ordered": false,
+    "protected": false,
+    "fixed": false,
+    "observed": true,
+    "group": "问卷抽样",
+    "possible_same_as": null
+  }
+]

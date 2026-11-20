@@ -1,0 +1,62 @@
+[
+  {
+    "left": "南厅",
+    "right": "北厅",
+    "minutes": 8
+  },
+  {
+    "left": "南厅",
+    "right": "亲子室",
+    "minutes": 8
+  },
+  {
+    "left": "南厅",
+    "right": "临时点",
+    "minutes": 5
+  },
+  {
+    "left": "北厅",
+    "right": "南厅",
+    "minutes": 8
+  },
+  {
+    "left": "北厅",
+    "right": "亲子室",
+    "minutes": 5
+  },
+  {
+    "left": "北厅",
+    "right": "临时点",
+    "minutes": 8
+  },
+  {
+    "left": "亲子室",
+    "right": "南厅",
+    "minutes": 8
+  },
+  {
+    "left": "亲子室",
+    "right": "北厅",
+    "minutes": 5
+  },
+  {
+    "left": "亲子室",
+    "right": "临时点",
+    "minutes": 8
+  },
+  {
+    "left": "临时点",
+    "right": "南厅",
+    "minutes": 5
+  },
+  {
+    "left": "临时点",
+    "right": "北厅",
+    "minutes": 8
+  },
+  {
+    "left": "临时点",
+    "right": "亲子室",
+    "minutes": 8
+  }
+]

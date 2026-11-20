@@ -1,0 +1,30 @@
+[
+  {
+    "id": "工段甲",
+    "affects": [
+      "北厅",
+      "亲子室"
+    ],
+    "start": 560,
+    "end": 630,
+    "min_duration": 60
+  },
+  {
+    "id": "工段乙",
+    "affects": [
+      "临时点"
+    ],
+    "start": 615,
+    "end": 700,
+    "min_duration": 60
+  },
+  {
+    "id": "工段丙",
+    "affects": [
+      "南厅"
+    ],
+    "start": 700,
+    "end": 830,
+    "min_duration": 110
+  }
+]
