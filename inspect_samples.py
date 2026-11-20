@@ -13,4 +13,5 @@ def read_samples():
 
 if __name__ == '__main__':
     for name, records in read_samples().items():
-        print(f'{name}：{len(records)} 条目')
+        count = len(records) if isinstance(records, (list, dict)) else 1
+        print(f'{name}：{count} 条目')
