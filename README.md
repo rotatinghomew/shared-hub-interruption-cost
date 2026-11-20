@@ -10,4 +10,4 @@ window 为分钟半开区间。场地入口决定行走耗时类别，transfer �
 
 ## 运行
 
-使用 Python 3.11，无需第三方依赖或服务。`python3 inspect_samples.py` 逐个读取资料并列出记录数；`python3 -m unittest -v` 检查关键原始记录间的关系。输出只描述原始资料，不是业务比较结果。
+使用 Python 3.11，无需第三方依赖或服务。`python3 inspect_samples.py` 逐个读取资料并列出记录数；`python3 -m unittest discover -s tests -v` 检查关键原始记录间的关系。输出只描述原始资料，不是业务比较结果。
