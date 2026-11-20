@@ -21,3 +21,12 @@ class SampleTests(unittest.TestCase):
         for row in candidates:
             self.assertGreaterEqual(row['end'] - row['start'], row['min_duration'])
         self.assertTrue(any(left['start'] < right['start'] < left['end'] for left in candidates for right in candidates))
+
+    def test_followup_is_after_the_accepted_substitution(self):
+        policy = self.data['review_policy']
+        self.assertTrue(any(frame['probability'] is None for frame in self.data['sampling_frame']))
+        trip_ids = {row['id'] for row in self.data['trips']}
+        for note in self.data['followup']:
+            self.assertTrue({note['left'],note['right']} <= trip_ids)
+            self.assertLess(policy['initial_cutoff'], note['received_order'])
+        self.assertTrue(any(row['kind']=='居民已接受换约' and row['received_order']==policy['initial_cutoff'] for row in self.data['decisions']))

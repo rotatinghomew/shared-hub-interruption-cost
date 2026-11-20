@@ -1,0 +1,17 @@
+[
+  {
+    "kind": "窗口待审",
+    "candidate": "工段甲",
+    "received_order": 1
+  },
+  {
+    "kind": "居民已接受换约",
+    "trip": "访010",
+    "received_order": 2
+  },
+  {
+    "kind": "取消保养",
+    "candidate": "工段丙",
+    "received_order": 3
+  }
+]

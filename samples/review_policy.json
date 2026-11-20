@@ -1,0 +1,15 @@
+{
+  "ranking": "优先比较完整出行损失率，不能稳健地区分时保持待议；同率时偏好预计替代出行时长较短的组合。",
+  "protected_max_unfinished": 0,
+  "cohorts": [
+    "已登记",
+    "抽样估计",
+    "未覆盖"
+  ],
+  "allowed_households_per_passes": [
+    1,
+    2
+  ],
+  "initial_cutoff": 2,
+  "revised_cutoff": 4
+}

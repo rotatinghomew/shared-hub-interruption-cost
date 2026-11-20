@@ -4,7 +4,7 @@
 
 ## 资料
 
-`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`trips`、`rooms`、`service_duration`、`transfer`、`shared_assistance`、`candidates`、`scenarios`、`bookings`、`accepted_changes`。日期是当地日历日期。空值表示没有对应观测或状态资料，不是数值零。
+`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`trips`、`rooms`、`service_duration`、`transfer`、`shared_assistance`、`candidates`、`scenarios`、`bookings`、`accepted_changes`、`sampling_frame`、`observations`、`followup`、`decisions`、`review_policy`。日期是当地日历日期。空值表示没有对应观测或状态资料，不是数值零。
 
 window 为分钟半开区间。场地入口决定行走耗时类别，transfer 已给出场地间耗时。protected 行程使用陪同点。固定预约涉及所列事项和场地；accepted_changes 是服务台已确认可替代的预约。
 

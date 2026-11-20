@@ -1,0 +1,346 @@
+[
+  {
+    "id": "门01",
+    "at": 556,
+    "trip": "访001",
+    "frame": "早班",
+    "group_link": "访000",
+    "received_order": 1
+  },
+  {
+    "id": "门02",
+    "at": 572,
+    "trip": "访002",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门03",
+    "at": 588,
+    "trip": "访003",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门04",
+    "at": 604,
+    "trip": "访004",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门06",
+    "at": 636,
+    "trip": "访006",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门07",
+    "at": 652,
+    "trip": "访007",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门08",
+    "at": 668,
+    "trip": "访008",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门09",
+    "at": 540,
+    "trip": "访009",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门11",
+    "at": 572,
+    "trip": "访011",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门12",
+    "at": 588,
+    "trip": "访012",
+    "frame": "午前",
+    "group_link": "访011",
+    "received_order": 4
+  },
+  {
+    "id": "门13",
+    "at": 604,
+    "trip": "访013",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门14",
+    "at": 620,
+    "trip": "访014",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门16",
+    "at": 652,
+    "trip": "访016",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门17",
+    "at": 668,
+    "trip": "访017",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门18",
+    "at": 540,
+    "trip": "访018",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门19",
+    "at": 556,
+    "trip": "访019",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门21",
+    "at": 588,
+    "trip": "访021",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门22",
+    "at": 604,
+    "trip": "访022",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门23",
+    "at": 620,
+    "trip": "访023",
+    "frame": "早班",
+    "group_link": "访022",
+    "received_order": 1
+  },
+  {
+    "id": "门24",
+    "at": 636,
+    "trip": "访024",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门26",
+    "at": 668,
+    "trip": "访026",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门27",
+    "at": 540,
+    "trip": "访027",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门28",
+    "at": 556,
+    "trip": "访028",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门29",
+    "at": 572,
+    "trip": "访029",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门31",
+    "at": 604,
+    "trip": "访031",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门32",
+    "at": 620,
+    "trip": "访032",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门33",
+    "at": 636,
+    "trip": "访033",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门34",
+    "at": 652,
+    "trip": "访034",
+    "frame": "午前",
+    "group_link": "访033",
+    "received_order": 1
+  },
+  {
+    "id": "门36",
+    "at": 540,
+    "trip": "访036",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门37",
+    "at": 556,
+    "trip": "访037",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门38",
+    "at": 572,
+    "trip": "访038",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门39",
+    "at": 588,
+    "trip": "访039",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门41",
+    "at": 620,
+    "trip": "访041",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门42",
+    "at": 636,
+    "trip": "访042",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门43",
+    "at": 652,
+    "trip": "访043",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门44",
+    "at": 668,
+    "trip": "访044",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门46",
+    "at": 556,
+    "trip": "访046",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门47",
+    "at": 572,
+    "trip": "访047",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门48",
+    "at": 588,
+    "trip": "访048",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门49",
+    "at": 604,
+    "trip": "访049",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门51",
+    "at": 636,
+    "trip": "访051",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 4
+  },
+  {
+    "id": "门52",
+    "at": 652,
+    "trip": "访052",
+    "frame": "早班",
+    "group_link": null,
+    "received_order": 1
+  },
+  {
+    "id": "门53",
+    "at": 668,
+    "trip": "访053",
+    "frame": "午前",
+    "group_link": null,
+    "received_order": 1
+  }
+]

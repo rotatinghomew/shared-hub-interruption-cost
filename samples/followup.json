@@ -1,0 +1,16 @@
+[
+  {
+    "frame": "早班",
+    "left": "访001",
+    "right": "访000",
+    "observation": "同一行程",
+    "received_order": 4
+  },
+  {
+    "frame": "午前",
+    "left": "访044",
+    "right": "访045",
+    "observation": "不同家庭",
+    "received_order": 4
+  }
+]
