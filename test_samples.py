@@ -26,6 +26,12 @@ class SampleTests(unittest.TestCase):
         policy = self.data['review_policy']
         self.assertTrue(any(frame['probability'] is None for frame in self.data['sampling_frame']))
         trip_ids = {row['id'] for row in self.data['trips']}
+        frames = {frame['id']:frame for frame in self.data['sampling_frame']}
+        for observation in self.data['observations']:
+            frame = frames[observation['frame']]
+            self.assertIn(observation['trip'], frame['trip_ids'])
+            self.assertLessEqual(frame['window'][0], observation['at'])
+            self.assertLess(observation['at'], frame['window'][1])
         for note in self.data['followup']:
             self.assertTrue({note['left'],note['right']} <= trip_ids)
             self.assertLess(policy['initial_cutoff'], note['received_order'])
