@@ -1,13 +1,64 @@
 # 综合服务楼的临时停用代价比较
 
-这里保存综合服务楼的临时停用代价比较工作所用的匿名合成记录。文件不包含分析结果或居民个人资料。
+这里保存综合服务楼的临时停用代价比较工作所用的匿名合成记录，以及在同一供给口径下
+比较停用组合的分析引擎。文件不包含居民个人资料。
 
 ## 资料
 
-`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`trips`、`rooms`、`service_duration`、`transfer`、`shared_assistance`、`candidates`、`scenarios`、`bookings`、`accepted_changes`、`sampling_frame`、`observations`、`followup`、`decisions`、`review_policy`。日期是当地日历日期。空值表示没有对应观测或状态资料，不是数值零。
+`samples/` 中每个文件都是独立的 UTF-8 JSON 文档：`trips`、`rooms`、`service_duration`、
+`transfer`、`shared_assistance`、`candidates`、`scenarios`、`bookings`、`accepted_changes`、
+`sampling_frame`、`observations`、`followup`、`decisions`、`review_policy`。日期是当地日历
+日期。空值表示没有对应观测或状态资料，不是数值零。
 
-window 为分钟半开区间。场地入口决定行走耗时类别，transfer 已给出场地间耗时。protected 行程使用陪同点。固定预约涉及所列事项和场地；accepted_changes 是服务台已确认可替代的预约。
+window 为分钟半开区间。场地入口决定行走耗时类别，transfer 已给出场地间耗时。
+protected 行程使用陪同点。固定预约涉及所列事项和场地；accepted_changes 是服务台已确认
+可替代的预约。
+
+## 分析引擎（`planner/`）
+
+- `data.py`：原始资料读取与索引（场地、行程、锁定、抽样框）。
+- `scheduler.py`：**整链**可行性排程。一次出行要么整链完成、要么计为未完成，不存在
+  完成三分之二。约束含开放半开区间、座位容量、事项先后与场地间行走、固定预约/已接受
+  换约的锁定、受保护行程的陪同工位；替代场地在同一组资源上竞争，不会被同时许诺给两个
+  停用窗口。
+- `identity.py`：疑似同一行程的身份分区。只有 `possible_same_as`、门口 `group_link` 或
+  补点 `followup` 涉及的记录对才可能合并；补点到达前同时保留拆户/并户两个完整解释，
+  绝不凭同一天同姓等特征去重。
+- `estimate.py`：按 **已登记 / 抽样估计 / 未覆盖** 三队列分别给区间。有抽样概率的框用
+  Horvitz–Thompson 外推并保留保守地板；无概率、只有经过次数的框只给户数边界，不宣称
+  需求为零，补点也不能填平该时段。
+- `policy.py`：满足 `min_duration` 的停用网格、事件时点与候选退出、受保护底线
+  （`protected_max_unfinished`）、服务台三分类（原预约无需改 / 只有替换建议 /
+  确实无法安排）。
+- `engine.py`：串联两个信息时点（`initial_cutoff`、`revised_cutoff`）下全部停用组合的
+  同一供给比较、排名与敏感性、关键行程组与针对性补点。
+- `report.py`：机器可读 JSON 与评审 Markdown。
+
+### 方法论护栏
+
+1. **基线隔离**：无任何停用时仍存在的损失（4 户结构性失败 + 容量/陪同竞争）单列，不计
+   入保养账。结构性失败在任何停用下保持失败（可行性集合只缩不增）。
+2. **锚定与单调性**：基线可行且在新停用下仍合法的放置被锚定，避免贪心重排制造"停用
+   反而救活行程"的抖动；容量竞争导致的重排变化单列"重排救活"，不与结构性新增混淆。
+3. **同一解释贯穿**：每个区间端点都来自同一个完整身份分区与同一供给假设，禁止按场所
+   挑最有利的混合情景。
+4. **稳健性两类信号**：点估计排序在两解释下互换（最严重），或损失率区间跨解释重叠
+   （不能稳健区分，排序待议但不否定窗口本身的可确认性）。
+5. **换约不可回退**：居民已接受的换约在后续比较中保持，不会为改善指标退回原预约。
+6. **补点有边界**：补点只校验可覆盖框的实际人群，未覆盖框（午后）保持户数边界、无点
+   估计。
 
 ## 运行
 
-使用 Python 3.11，无需第三方依赖或服务。`python3 inspect_samples.py` 逐个读取资料并列出记录数；`python3 -m unittest discover -s tests -v` 检查关键原始记录间的关系。输出只描述原始资料，不是业务比较结果。
+使用 Python 3.11，无需第三方依赖或服务。所有命令均以隔离模式 `-I` 运行，脚本路径显式
+传入，样本目录与代码目录分离。
+
+```
+python3 -I inspect_samples.py                 # 盘点原始资料记录数
+python3 -I run_tests.py                       # 运行全部单元测试（约 2 分钟）
+python3 -I run_review.py                      # 两个信息时点各出一份报告到 reports/
+python3 -I run_review.py --cutoff 4          # 只出修订时点
+```
+
+`reports/review_cutoff{2,4}.md` 是评审稿，同名 `.json` 是机器可读结果。输出区分确定性
+记录与区间估计、基线损失与停用新增、可确认窗口与待议组合。
